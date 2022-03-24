@@ -1,0 +1,46 @@
+body {
+    background-color: #ffc402;
+}
+
+h1 {
+    color: #184b7a;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 75px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+
+@keyframes moveplankton{
+    from {left: 0%;}
+    to {left: 80%;}
+}
+
+#plankton {
+    color: #184b7a;
+    font-family: 'Courier New', Courier, monospace;
+    background: transparent;
+    width: 100px;
+    height: 120px;
+    position: relative;
+    animation: moveplankton 10s infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes movemegamind{
+    from {left: 80%;}
+    to {left: 0%;}
+}
+
+#megamind {
+    color: #184b7a;
+    font-family: 'Courier New', Courier, monospace;
+    background: transparent;
+    width: 100px;
+    height: 120px;
+    position: relative;
+    animation: movemegamind 10s infinite;
+    animation-timing-function: ease;
+}
