@@ -4,21 +4,28 @@ body {
 
 h1 {
     color: #184b7a;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 75px;
+    font-family: Courier;
+    font-size: 70px;
     text-align: center;
+    position: relative;
     margin-top: 50px;
     margin-bottom: 100px;
     margin-right: 150px;
     margin-left: 80px;
+    transition: 0.5s;
+}
+
+h1:hover {
+    color: #ffffff;
+    font-size: 50px;
 }
 
 @keyframes moveplankton{
-    from {left: 0%;}
-    to {left: 80%;}
+    from {left: 5%;}
+    to {left: 90%;}
 }
 
-#plankton {
+.plankton {
     color: #184b7a;
     font-family: 'Courier New', Courier, monospace;
     background: transparent;
@@ -26,15 +33,15 @@ h1 {
     height: 120px;
     position: relative;
     animation: moveplankton 10s infinite;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes movemegamind{
-    from {left: 80%;}
-    to {left: 0%;}
+    from {left: 90%;}
+    to {left: 5%;}
 }
 
-#megamind {
+.megamind {
     color: #184b7a;
     font-family: 'Courier New', Courier, monospace;
     background: transparent;
@@ -42,5 +49,15 @@ h1 {
     height: 120px;
     position: relative;
     animation: movemegamind 10s infinite;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
+}
+.megamind .megamindpic {
+    color: #184b7a;
+    font-family: 'Courier New', Courier, monospace;
+    background: transparent;
+    width: 100px;
+    height: 120px;
+    position: absolute;
+    animation: movemegamind 10s infinite;
+    animation-timing-function: ease-in-out;
 }
